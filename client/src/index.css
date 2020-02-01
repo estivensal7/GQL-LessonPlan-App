@@ -1,0 +1,72 @@
+body {
+	background: #343a40 !important;
+	font-family: "Roboto";
+}
+
+#main h1 {
+	color: #eee;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 70px;
+	margin-top: 20px;
+}
+
+#main {
+	padding: 0px;
+	box-sizing: border-box;
+	width: 60%;
+	/* height: 100%; */
+}
+
+#player-details {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 40%;
+	height: 100%;
+	background: #343a40;
+	padding: 30px;
+	overflow: auto;
+	box-shadow: -2px -3px 5px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	color: white;
+}
+
+.logo-image {
+	width: 60px;
+	height: 60px;
+}
+
+.more-details:hover {
+	cursor: pointer;
+}
+
+#main-logo {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 10;
+	left: 10;
+}
+
+#header-details {
+	margin-bottom: 20px;
+}
+
+#header-details > img {
+	width: 33%;
+	margin-left: 33%;
+	margin-right: 33%;
+}
+
+#team-table {
+	width: 90%;
+	overflow: scroll;
+}
+
+#player-modal-btn,
+#team-modal-btn {
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}

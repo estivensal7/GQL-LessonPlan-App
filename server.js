@@ -13,15 +13,18 @@ app.use(cors());
 const PORT = process.env.PORT || 3001;
 
 //connect to mlab database
-mongoose.connect(
-	// "mongodb://estiven:test123@ds149146.mlab.com:49146/graphql_module"
-	"mongodb+srv://graphqlUser:Test123!@cluster0-uq6pl.mongodb.net/test?retryWrites=true&w=majority",
-	{
-		dbName: "soccer_teams",
-		useNewUrlParser: true,
-		useUnifiedTopology: true
-	}
-);
+mongoose
+	.connect(
+		"mongodb+srv://graphqlUser:Test123@cluster0-uq6pl.mongodb.net/test?retryWrites=true&w=majority",
+		{
+			dbName: "soccer_teams",
+			useNewUrlParser: true,
+			useUnifiedTopology: true
+		}
+	)
+	.catch(error => {
+		console.log(error);
+	});
 
 //confirm connection
 mongoose.connection.once("open", () => {
